@@ -1,0 +1,92 @@
+[
+  {
+    "repo": "rag-pdf-assistant",
+    "title": "Assistant RAG",
+    "category": "ia",
+    "emoji": "🤖",
+    "summary": "Questions-réponses sur des documents PDF avec citation des sources : embeddings multilingues locaux, recherche vectorielle, génération par Claude, API FastAPI et interface Streamlit.",
+    "highlight": "Questions en français sur un article en anglais",
+    "stack": ["Python", "LLM", "RAG", "FastAPI", "Streamlit"]
+  },
+  {
+    "repo": "expense-tracker",
+    "title": "Suivi des dépenses",
+    "category": "web",
+    "emoji": "💳",
+    "summary": "Application full-stack : comptes avec JWT, dépenses par catégorie, synthèse mensuelle. Tests d'intégration sur un vrai PostgreSQL, Docker Compose, CI et déploiement Render.",
+    "highlight": "16 tests d'intégration · CI GitHub Actions",
+    "stack": ["ASP.NET Core 10", "EF Core", "PostgreSQL", "Next.js", "TypeScript"]
+  },
+  {
+    "repo": "diabetes-risk-api",
+    "title": "Diabetes Risk API",
+    "category": "ia",
+    "emoji": "🩸",
+    "summary": "Du modèle à la production : sélection par validation croisée, API FastAPI validée par Pydantic, image Docker sans root, CI qui démarre le conteneur et l'interroge.",
+    "highlight": "ROC AUC 0,81 en test",
+    "stack": ["scikit-learn", "FastAPI", "Docker", "GitHub Actions"]
+  },
+  {
+    "repo": "french-sentiment-camembert",
+    "title": "Sentiment en français",
+    "category": "ia",
+    "emoji": "🇫🇷",
+    "summary": "Avis de films Allociné : comparaison d'un modèle TF-IDF et de DistilCamemBERT fine-tuné, mesurés sur 20 000 avis de test.",
+    "highlight": "Transformers vs ML classique",
+    "stack": ["PyTorch", "Transformers", "CamemBERT", "scikit-learn"]
+  },
+  {
+    "repo": "agripredict-plant-disease",
+    "title": "AgriPredict",
+    "category": "ia",
+    "emoji": "🌱",
+    "summary": "Détection de maladies des plantes à partir de photos de feuilles (mildiou, oïdium, carence en azote, plante saine) par transfer learning.",
+    "highlight": "MobileNetV2 · 87,6 % en test",
+    "stack": ["TensorFlow", "Keras", "MobileNetV2", "Optuna"]
+  },
+  {
+    "repo": "sentiment-analysis-imdb",
+    "title": "Sentiment IMDB",
+    "category": "ia",
+    "emoji": "💬",
+    "summary": "Classification de 50 000 critiques de films : trois modèles comparés, sélection sur validation, projet packagé avec CLI et tests.",
+    "highlight": "SVM linéaire · 90,6 % en test",
+    "stack": ["Python", "scikit-learn", "NLP"]
+  },
+  {
+    "repo": "car-rental-microservices",
+    "title": "Car Rental Microservices",
+    "category": "backend",
+    "emoji": "🚗",
+    "summary": "Location de voitures en microservices : API Gateway avec JWT, découverte Eureka, configuration centralisée, Docker Compose et CI qui teste les 6 services.",
+    "highlight": "6 services · CI avec MySQL",
+    "stack": ["Spring Boot", "Spring Cloud", "MySQL", "Docker"]
+  },
+  {
+    "repo": "medical-cabinet-android",
+    "title": "Tabibi",
+    "category": "mobile",
+    "emoji": "🩺",
+    "summary": "Application Android de gestion de cabinet médical : prise de rendez-vous, espaces médecin et patient, données locales SQLite.",
+    "highlight": "Android natif",
+    "stack": ["Android", "Java", "SQLite"]
+  },
+  {
+    "repo": "medicabinet-dotnet",
+    "title": "MediCabinet",
+    "category": "backend",
+    "emoji": "🗂️",
+    "summary": "Application de bureau : patients, rendez-vous, consultations et prescriptions, architecture MVC avec accès aux données ADO.NET.",
+    "highlight": "Architecture MVC",
+    "stack": ["C#", "WinForms", "ADO.NET", "SQL Server"]
+  },
+  {
+    "repo": "machine-learning-tps",
+    "title": "Machine Learning TPs",
+    "category": "ia",
+    "emoji": "📊",
+    "summary": "Apprentissage supervisé et non supervisé, autoencodeurs, vision par ordinateur et data mining sur des jeux de données classiques.",
+    "highlight": "8 notebooks",
+    "stack": ["Python", "scikit-learn", "TensorFlow"]
+  }
+]
