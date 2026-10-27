@@ -251,3 +251,63 @@ footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 2
   .stats { gap: 22px; }
   .grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Bouton CV dans la barre de navigation ---------- */
+.nav-cv { padding: 7px 14px; font-size: 0.9rem; border-color: var(--accent); color: var(--accent); }
+.nav-cv:hover { background: color-mix(in srgb, var(--accent) 14%, var(--card)); }
+
+/* ---------- Domaines et engagements ---------- */
+.domains { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
+.domain {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.domain:hover { transform: translateY(-3px); border-color: var(--accent); }
+.domain .emoji { font-size: 1.6rem; }
+.domain h3 { margin: 8px 0 6px; font-size: 1.05rem; }
+.domain p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+/* ---------- Parcours et expérience : frise chronologique ---------- */
+.journey { list-style: none; padding: 0; margin: 8px 0 0; position: relative; }
+.journey::before {
+  content: ""; position: absolute; left: 150px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--border);
+}
+.journey > li { display: grid; grid-template-columns: 130px 1fr; gap: 40px; margin-bottom: 22px; position: relative; }
+.journey > li::before {
+  content: ""; position: absolute; left: 144px; top: 22px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.period { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); padding-top: 18px; text-align: right; }
+.card-tl {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 22px;
+  transition: border-color 0.2s;
+}
+.card-tl:hover { border-color: var(--accent); }
+.card-tl h3 { margin: 0; font-size: 1.08rem; }
+.card-tl .org { margin: 4px 0 8px; color: var(--accent-2); font-weight: 600; font-size: 0.92rem; }
+.card-tl p, .card-tl li { color: var(--muted); font-size: 0.93rem; }
+.card-tl p { margin: 0 0 8px; }
+.card-tl ul { margin: 0 0 10px; padding-left: 18px; }
+.card-tl li { margin-bottom: 4px; }
+.card-tl .tags { margin: 0; }
+
+.feature .badge { margin-left: 8px; vertical-align: middle; }
+.cv-note { margin-top: 4px; font-size: 0.88rem; }
+.cv-note a { color: var(--accent); }
+
+@media (max-width: 820px) {
+  .journey::before { left: 7px; }
+  .journey > li { grid-template-columns: 1fr; gap: 6px; padding-left: 30px; }
+  .journey > li::before { left: 1px; top: 4px; }
+  .period { text-align: left; padding-top: 0; }
+  .nav-cv { margin-left: auto; }
+  .theme-toggle { margin-left: 8px; }
+}

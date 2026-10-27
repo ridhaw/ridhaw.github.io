@@ -65,6 +65,7 @@ function typeRoles() {
 
 /* ---------- Compteurs ---------- */
 function countUp(el, target) {
+  if (!el) return;
   if (reducedMotion) { el.textContent = target; return; }
   const start = performance.now();
   const step = (now) => {
@@ -127,7 +128,6 @@ async function loadProjects() {
       .filter((p) => p.github || !repos.length);
     renderProjects(document.querySelector(".chip.active").dataset.filter);
     countUp($("#statProjects"), projects.length);
-    countUp($("#statStars"), repos.reduce((sum, r) => sum + r.stargazers_count, 0));
     renderActivity(repos);
   } catch {
     countUp($("#statProjects"), projects.length);

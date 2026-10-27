@@ -26,10 +26,13 @@
     <a class="brand" href="#top">RW<span>.</span></a>
     <nav aria-label="Navigation principale">
       <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
+      <a href="#journey">Parcours</a>
+      <a href="#experience">Expérience</a>
       <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="btn nav-cv" href="cv/CV-Ridha-Wannessi.pdf" download>CV ↓</a>
     <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">◐</button>
   </header>
 
@@ -46,13 +49,15 @@
           de machine learning et des applications d'IA générative.
         </p>
         <div class="cta">
-          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn primary" href="cv/CV-Ridha-Wannessi.pdf" download>Télécharger mon CV ↓</a>
+          <a class="btn" href="#projects">Voir mes projets</a>
+          <a class="btn" href="https://www.linkedin.com/in/ridha-wannessi/" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="btn" href="https://github.com/ridhaw" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
         <ul class="stats" aria-label="Chiffres clés">
           <li><strong data-count="10" id="statProjects">0</strong><span>projets publiés</span></li>
+          <li><strong data-count="4">0</strong><span>stages</span></li>
           <li><strong data-count="4">0</strong><span>pipelines CI</span></li>
-          <li><strong id="statStars">0</strong><span>étoiles GitHub</span></li>
         </ul>
       </div>
       <div class="hero-card reveal">
@@ -73,25 +78,103 @@
         <p>
           J'aime construire des logiciels complets et solides : une architecture claire, des données
           bien modélisées, des tests qui tournent à chaque push et un déploiement reproductible.
-          Mon projet le plus ambitieux, <strong>Wathiq</strong>, est une plateforme fintech
-          (portefeuille numérique, paiement fractionné, scoring de crédit) en monolithe modulaire
-          .NET avec PostgreSQL, une application Flutter et des portails Next.js.
+          Mon projet le plus ambitieux, <strong>Wathiq</strong>, réalisé pendant mon stage PFA chez
+          ReaddlyTech, est une plateforme fintech (portefeuille numérique, paiement fractionné,
+          scoring de crédit) en monolithe modulaire .NET avec PostgreSQL, une application Flutter
+          et des portails Next.js.
         </p>
         <p>
           Côté données, je vais du machine learning classique au deep learning et à l'IA générative :
-          transfer learning en vision, fine-tuning de transformers en français, et assistants RAG
-          qui répondent en citant leurs sources.
+          transfer learning en vision, classification de textes, et assistants RAG qui répondent en
+          citant leurs sources.
         </p>
+      </div>
+      <div class="domains">
+        <article class="domain"><span class="emoji">⚙️</span><h3>Back-end &amp; architecture</h3><p>API REST, microservices et monolithes modulaires en .NET et Spring Boot, sécurisés par JWT.</p></article>
+        <article class="domain"><span class="emoji">🌐</span><h3>Web &amp; multimédia</h3><p>Interfaces Angular et Next.js réactives, design soigné et expérience utilisateur.</p></article>
+        <article class="domain"><span class="emoji">📱</span><h3>Mobile</h3><p>Applications Flutter et Android natives, de la gestion de cabinet médical à la fintech.</p></article>
+        <article class="domain"><span class="emoji">🧠</span><h3>IA &amp; data</h3><p>Vision par ordinateur, NLP, assistants RAG et mise en production de modèles (MLOps).</p></article>
       </div>
     </section>
 
-    <section id="skills" class="section reveal">
-      <h2><span class="num">02.</span> Compétences</h2>
-      <div class="skills" id="skills-grid"></div>
+    <section id="journey" class="section reveal">
+      <h2><span class="num">02.</span> Parcours</h2>
+      <ol class="journey">
+        <li>
+          <span class="period">2024 – 2026</span>
+          <div class="card-tl">
+            <h3>Cycle ingénieur en informatique</h3>
+            <p class="org">ISIMS — Institut Supérieur d'Informatique et de Multimédia de Sfax</p>
+            <p>Spécialité Technologies du Web et du Multimédia. Membre actif des clubs AWS et IEEE.</p>
+          </div>
+        </li>
+        <li>
+          <span class="period">2021 – 2024</span>
+          <div class="card-tl">
+            <h3>Licence nationale en technologies de l'informatique</h3>
+            <p class="org">ISET Sidi Bouzid — Institut Supérieur des Études Technologiques</p>
+            <p>Parcours Développement Multimédia et Web.</p>
+          </div>
+        </li>
+        <li>
+          <span class="period">2019 – 2020</span>
+          <div class="card-tl">
+            <h3>Baccalauréat Sciences de l'informatique</h3>
+            <p class="org">Lycée Sidi Ali Ben Aoun</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <h2><span class="num">03.</span> Expérience</h2>
+      <ol class="journey">
+        <li>
+          <span class="period">Juil. – août 2026</span>
+          <div class="card-tl">
+            <h3>Stagiaire PFA — Wathiq</h3>
+            <p class="org">ReaddlyTech</p>
+            <ul>
+              <li>Conception et développement de Wathiq, plateforme fintech : portefeuille numérique, paiement fractionné (BNPL), scoring de crédit, vérification d'identité.</li>
+              <li>Monolithe modulaire .NET 10 et PostgreSQL 17, registre comptable en ajout seul, tests d'architecture.</li>
+              <li>Application mobile Flutter, portails web Next.js et service d'IA en Python ; Docker et intégration continue.</li>
+            </ul>
+            <p class="tags"><span>.NET</span><span>PostgreSQL</span><span>Flutter</span><span>Next.js</span><span>Docker</span></p>
+          </div>
+        </li>
+        <li>
+          <span class="period">Févr. – mai 2024</span>
+          <div class="card-tl">
+            <h3>Stagiaire de fin d'études</h3>
+            <p class="org">Diva Software</p>
+            <ul>
+              <li>Conception et développement d'une GMAO (gestion de maintenance assistée par ordinateur).</li>
+              <li>Services REST en Spring Boot et interfaces réactives en Angular.</li>
+            </ul>
+            <p class="tags"><span>Angular</span><span>Spring Boot</span><span>REST</span></p>
+          </div>
+        </li>
+        <li>
+          <span class="period">Janv. 2022</span>
+          <div class="card-tl">
+            <h3>Stagiaire — stage de perfectionnement</h3>
+            <p class="org">Tunisie Telecom</p>
+            <ul><li>Développement d'une application web de e-commerce, côté back-end et front-end.</li></ul>
+          </div>
+        </li>
+        <li>
+          <span class="period">Janv. 2021</span>
+          <div class="card-tl">
+            <h3>Stagiaire — stage d'initiation</h3>
+            <p class="org">Tunisie Telecom</p>
+            <ul><li>Découverte du milieu professionnel de l'informatique et des pratiques de développement.</li></ul>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <section id="projects" class="section reveal">
-      <h2><span class="num">03.</span> Projets</h2>
+      <h2><span class="num">04.</span> Projets</h2>
       <p class="muted">Données chargées en direct depuis l'API GitHub : langages, étoiles et dernière mise à jour.</p>
       <div class="filters" role="tablist" aria-label="Filtrer les projets">
         <button class="chip active" data-filter="all" role="tab" aria-selected="true">Tous</button>
@@ -102,28 +185,41 @@
       </div>
       <div class="grid" id="projects-grid" aria-live="polite"></div>
       <h3 class="subhead">Projet phare</h3>
-      <a class="feature" href="https://github.com/Wathiqq/wathiq" target="_blank" rel="noopener">
+      <div class="feature">
         <span class="emoji">🏦</span>
         <div>
-          <strong>Wathiq — plateforme fintech</strong>
-          <p>Portefeuille numérique, BNPL, scoring de crédit comportemental, vérification d'identité, services marchands et plateforme développeurs.</p>
+          <strong>Wathiq — plateforme fintech</strong> <span class="badge">Stage PFA · ReaddlyTech</span>
+          <p>Portefeuille numérique, BNPL, scoring de crédit comportemental, vérification d'identité, services marchands et plateforme développeurs. Code source privé, présentation sur demande.</p>
           <p class="tags"><span>.NET</span><span>PostgreSQL</span><span>Flutter</span><span>Next.js</span><span>Python</span></p>
         </div>
-      </a>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2><span class="num">05.</span> Compétences</h2>
+      <div class="skills" id="skills-grid"></div>
+      <h3 class="subhead">Engagements</h3>
+      <div class="domains">
+        <article class="domain"><span class="emoji">☁️</span><h3>AWS Club</h3><p>Membre actif : cloud computing et DevOps.</p></article>
+        <article class="domain"><span class="emoji">🔬</span><h3>IEEE Club</h3><p>Membre actif de la branche étudiante.</p></article>
+      </div>
     </section>
 
     <section id="activity" class="section reveal">
-      <h2><span class="num">04.</span> Derniers projets mis à jour</h2>
+      <h2><span class="num">06.</span> Derniers projets mis à jour</h2>
       <ul class="timeline" id="activity-list"><li class="muted">Chargement…</li></ul>
     </section>
 
     <section id="contact" class="section contact reveal">
-      <h2><span class="num">05.</span> Contact</h2>
-      <p>Une opportunité, un projet ou une question ? Écrivez-moi.</p>
+      <h2><span class="num">07.</span> Une opportunité ? Parlons-en.</h2>
+      <p>Stage, projet ou simple question : je réponds rapidement.</p>
       <div class="cta">
         <a class="btn primary" href="mailto:wannessiridha@gmail.com">wannessiridha@gmail.com</a>
-        <a class="btn" href="https://github.com/ridhaw" target="_blank" rel="noopener">github.com/ridhaw ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/ridha-wannessi/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/ridhaw" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="cv/CV-Ridha-Wannessi.pdf" download>Télécharger mon CV ↓</a>
       </div>
+      <p class="muted cv-note">Version ATS du CV : <a href="cv/CV-Ridha-Wannessi-ATS.pdf" download>CV-Ridha-Wannessi-ATS.pdf</a></p>
     </section>
   </main>
 
